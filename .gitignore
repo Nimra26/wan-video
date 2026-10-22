@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+outputs/
+*.log
+# Upstream clone + ~12 GB of model weights; see README for setup.
+ComfyUI/
