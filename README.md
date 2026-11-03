@@ -12,6 +12,12 @@ Local text-to-video with [Wan](https://github.com/Wan-Video) models running on C
 
 Videos are written to `outputs/`.
 
+## Run on Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nimra26/wan-video/blob/main/colab.ipynb)
+
+Open `colab.ipynb`, pick a GPU runtime (T4 is enough), and run the cells top to bottom. The notebook installs ComfyUI, downloads the models, and generates and plays the video.
+
 ## Setup
 
 ```

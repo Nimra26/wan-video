@@ -26,7 +26,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 COMFY = ROOT / "ComfyUI"
+# Local setup uses ./venv; elsewhere (e.g. Colab) run ComfyUI with the current interpreter.
 PYTHON = ROOT / "venv" / "bin" / "python"
+if not PYTHON.exists():
+    PYTHON = Path(sys.executable)
 OUT_DIR = ROOT / "outputs"
 HOST = "127.0.0.1:8188"
 FPS = {"wan21": 16, "wan22": 24}  # native frame rates
